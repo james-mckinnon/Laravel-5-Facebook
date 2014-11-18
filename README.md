@@ -9,7 +9,7 @@ The package can be installed via Composer by requiring the "philo/laravel-5-face
 {
     "require": {
         "laravel/framework": "~5.0*",
-        "philo/laravel-5-facebook": "1.0.*"
+        "philo/laravel5-facebook": "1.0.*"
     },
     "minimum-stability": "dev"
 }
