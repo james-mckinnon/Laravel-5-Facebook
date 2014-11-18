@@ -1,0 +1,21 @@
+{
+    "name": "philo/laravel5-facebook",
+    "description": "Laravel 5 - Facebook SDK v4 wrapper.",
+    "authors": [
+        {
+            "name": "Philo Hermans",
+            "email": "me@philohermans.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.0.*",
+        "facebook/php-sdk-v4": "4.0.12"
+    },
+    "autoload": {
+        "psr-0": {
+            "Philo\\Laravel5Facebook\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
