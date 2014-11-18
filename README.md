@@ -1,6 +1,7 @@
 Laravel 5 - Facebook SDK v4 wrapper
 ===============
 
+<img src="https://poser.pugx.org/philo/laravel5-facebook/version.svg"> <img src="https://poser.pugx.org/philo/laravel5-facebook/downloads.svg">
 
 ## Installation
 The package can be installed via Composer by requiring the "philo/laravel5-facebook": "1.0.*" package in your project's composer.json.
