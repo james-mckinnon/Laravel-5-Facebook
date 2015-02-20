@@ -16,10 +16,7 @@ class Laravel5FacebookServiceProvider extends ServiceProvider {
 	 *
 	 * @return void
 	 */
-	public function boot()
-	{
-		$this->package('philo/laravel5-facebook');
-	}
+	public function boot(){ }
 
 	/**
 	 * Register the service provider.
