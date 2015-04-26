@@ -2,6 +2,7 @@
 
 use Facebook\FacebookRequest;
 use Facebook\FacebookRequestException;
+use Facebook\FacebookRedirectLoginHelper;
 use Facebook\FacebookSession;
 use Facebook\GraphAlbum;
 use Facebook\GraphLocation;
@@ -113,6 +114,18 @@ class Facebook {
 	public function album($id)
 	{
 		return $this->request('/' . $id)->getGraphObject(GraphAlbum::className());
+	}
+
+	public function getLoginUrl()
+	{
+		$helper = new FacebookRedirectLoginHelper($app['config']->get('services.facebook.redirect_url'));
+		return $helper->getLoginUrl(); 
+	}
+
+	public function getLogoutUrl($redirect)
+	{
+		$helper = new FacebookRedirectLoginHelper();
+		return $helper->getLogoutUrl($this->session, $redirect);
 	}
 
 }
